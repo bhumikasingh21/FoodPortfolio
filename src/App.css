@@ -1,38 +1,38 @@
-.App {
+.food h2{
   text-align: center;
+  margin: 10px;
+  color:  rgb(255,219,88);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.food h3{
+  text-align: center;
+ color:  rgb(98, 100, 167);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.foodpos{
+margin: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.category{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 100px;
+  margin: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.category button{
+background-color: rgb(255, 200, 0);
+color: #fff;
+padding: 10px;
+border: none;
+outline: none;
+border-radius: 5px;
+cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.itempos{
+  display: flex;
+  justify-content: center;
+  gap:80px;
 }
+
