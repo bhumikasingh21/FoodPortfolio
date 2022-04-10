@@ -1,7 +1,10 @@
 .food h2{
-  text-align: center;
   margin: 10px;
   color:  rgb(255,219,88);
+}
+
+.head-pos{
+  text-align: center;
 }
 
 .food h3{

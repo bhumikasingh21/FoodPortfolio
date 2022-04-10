@@ -10,17 +10,19 @@ function App() {
 
   const handleClick = (categitem)=>{
   console.log(categitem)
-  const newData = items.filter((value)=>{
+  const newData = Food.filter((value)=>{
         return value.category===categitem;
   })
   setItems(newData)
   }
-  // React.useEffect(()=>{
-  // setItems(items)
-  // },[Food])
+//  React.useEffect(()=>{
+//     if (items.length>0){
+//       setItems(Food)
+//     } 
+//   },[items])
   return (
     <div className="food">
-      <h2>Place your Order</h2>
+      <h2 className='head-pos'>Place your Order</h2>
       <h3>Eat what makes you happy 😁</h3>
 
       <div className='foodpos'>
