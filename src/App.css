@@ -39,3 +39,20 @@ cursor: pointer;
   gap:80px;
 }
 
+.displaycard{
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+  justify-content: flex-end;
+}
+
+.displaycard button{
+  background-color:  rgb(98, 100, 167);;
+color: #fff;
+padding: 10px;
+border: none;
+outline: none;
+border-radius: 5px;
+cursor: pointer;
+}
+

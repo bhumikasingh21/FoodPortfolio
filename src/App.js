@@ -6,6 +6,7 @@ import Food from './Food';
 
 function App() {
   const [items,setItems] = React.useState(Food)
+  const [page,setPage] = React.useState(0)
   console.log(items)
 
   const handleClick = (categitem)=>{
@@ -20,6 +21,13 @@ function App() {
 //       setItems(Food)
 //     } 
 //   },[items])
+const Previous = ()=>{
+  setPage(page-1)
+}
+const Next = ()=>{
+  setPage(page+1)
+}
+
   return (
     <div className="food">
       <h2 className='head-pos'>Place your Order</h2>
@@ -35,7 +43,11 @@ function App() {
 
       </div>
       <div className='itempos'>
-      <Item items={items}/>
+      <Item items={items} page={page}/>
+      </div>
+      <div className='displaycard'>
+      <button onClick={Previous} disabled={page===0?true:false}>Previous</button>
+      <button onClick={Next} disabled={page === 2 ? true : false}>Next</button>
       </div>
       </div>
     </div>

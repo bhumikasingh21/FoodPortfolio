@@ -1,15 +1,15 @@
 import React from 'react'
 import "./Item.css"
+import Loader from './Loader'
 
 
-const Item = ({items}) => {
+const Item = ({items,page}) => {
   console.log(items,"items")
   return (
     <div>
-      
          <div className='all-cards'>
        { items.length>0?
-        items.map((value)=>{
+        items.slice(page*9,page*9+9).map((value)=>{
             const{id,Image,name,category,price} = value;
             return <div className='card'>
             <div className='card-left'>
@@ -25,7 +25,7 @@ const Item = ({items}) => {
             </div>
             </div>
             
-        }):""
+        }):<Loader/>
         
       }</div>
         
